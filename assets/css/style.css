@@ -51,10 +51,42 @@ html{
 }
 #result{
     margin-top: 1rem;
+    color: #fff;
 }
 
 #result .input-msg{
     color: #FFB200;
     font-weight: 400;
 
+}
+#result  .error-img{
+    color: #FFB200;
+}
+#result .info-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#result .info-wrapper .movie-poster{
+    height: auto;
+    max-width: 200px;
+}
+#result .info-wrapper .movie-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#result .info-wrapper .movie-info .movie-titles .rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#result .info-wrapper .movie-info .movie-titles h2{
+    font-size: 32px;
+
+}
+#result .info-wrapper .movie-info .rating img{
+    width: 15px;
 }
