@@ -62,31 +62,44 @@ html{
 #result  .error-img{
     color: #FFB200;
 }
-#result .info-wrapper{
-    display: flex;
-    justify-content: space-between;
+.info-wrapper{
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.movie-left{
+    width: 45%;
 }
 
-#result .info-wrapper .movie-poster{
-    height: auto;
+.info-wrapper .movie-left img{
     max-width: 200px;
 }
-#result .info-wrapper .movie-info{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+.info-wrapper .movie-right{
+    width: 45%;
 }
-#result .info-wrapper .movie-info .movie-titles .rating{
+
+.info-wrapper .movie-right .movie-name h2{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1.25px;
+    text-align: center;
+}
+
+.movie-right .rating{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-#result .info-wrapper .movie-info .movie-titles h2{
-    font-size: 32px;
-
+.movie-right .rating img{
+    width: 20px;
+    margin-right: 10px;
 }
-#result .info-wrapper .movie-info .rating img{
-    width: 15px;
+.movie-info{
+    margin-top: 20px;
+}
+.movie-info span{
+    margin-left: 15px;
 }

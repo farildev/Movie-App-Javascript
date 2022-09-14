@@ -28,16 +28,22 @@ let getMovie = () => {
 
             result.innerHTML = `
                 <div class="info-wrapper">
-                    <div class="movie-info">
-                    <img class="movie-poster" src="${data.Poster}" alt="" />
-                    <div class="movie-titles">
-                        <h2>${data.Title}</h2>
+                    <div class="movie-left">
+                        <img src="${data.Poster}" alt="" />
+                    </div>
+                    <div class="movie-right">
+                        <div class="movie-name">
+                            <h2>${data.Title}</h2>
+                        </div>
                         <div class="rating">
-                            <img src="./assets/img/star-filled.svg" alt="IMDB Rating" />
+                            <img src="./assets/img/star-filled.svg" alt="" />
                             <span>${data.imdbRating}</span>
                         </div>
-                    </div>
-                    
+                        <div class="movie-info">
+                            <span>${data.Rated}</span>
+                            <span>${data.Year}</span>
+                            <span>${data.Runtime}</span>
+                        </div>
                     </div>
                 </div>
             `;
