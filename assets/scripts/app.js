@@ -37,7 +37,7 @@ let getMovie = () => {
                         </div>
                         <div class="rating">
                             <img src="./assets/img/star-filled.svg" alt="" />
-                            <span>${data.imdbRating}</span>
+                            <span>${data.imdbRating} IMDB Rating</span>
                         </div>
                         <div class="movie-info">
                             <span>${data.Rated}</span>
@@ -45,6 +45,13 @@ let getMovie = () => {
                             <span>${data.Runtime}</span>
                         </div>
                     </div>
+                </div>
+                <div class="information">
+                    <div class="genre-info">
+                        <div class="genre">${data.Genre.split(",").join("<span></span>")}</div>
+                    </div>
+                    <div class="plot-info"><h3>Plot:</h3>${data.Plot}</div>
+                    <div class="cast-info"><h3>Cast:</h3>${data.Actors}</div>
                 </div>
             `;
         })
