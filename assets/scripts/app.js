@@ -15,17 +15,6 @@ let getMovie = () => {
         fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
-            console.log(data.Poster);
-            console.log(data.Title);
-            console.log(data.Year);
-            console.log(data.imdbRating);
-            console.log(data.Rated);
-            console.log(data.Plot);
-            console.log(data.Actors);
-            console.log(data.Runtime);
-            console.log(data.Genre);
-
             result.innerHTML = `
                 <div class="info-wrapper">
                     <div class="movie-left">
@@ -47,7 +36,7 @@ let getMovie = () => {
                     </div>
                 </div>
                 <div class="information">
-                    <div class="genre-info">
+                    <div class="genre-info">    
                         <div class="genre">${data.Genre.split(",").join("<span></span>")}</div>
                     </div>
                     <div class="plot-info"><h3>Plot:</h3>${data.Plot}</div>
@@ -55,7 +44,6 @@ let getMovie = () => {
                 </div>
             `;
         })
-        console.log(url);
     }
 }
 

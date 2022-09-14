@@ -22,6 +22,7 @@ html{
     box-shadow: 0px 6px 13px -5px rgba(0,0,0,0.45);
     -webkit-box-shadow: 0px 6px 13px -5px rgba(0,0,0,0.45);
     -moz-box-shadow: 0px 6px 13px -5px rgba(0,0,0,0.45);
+    max-height: 100%;
 }
 .search-wrapper{
     margin-top: 1rem;
@@ -48,6 +49,8 @@ html{
     border-radius: 7px;
     outline: none;
     border: none;
+    margin-left: 10px;
+    cursor: pointer;
 }
 #result{
     margin-top: 1rem;
@@ -72,6 +75,7 @@ html{
 
 .info-wrapper .movie-left img{
     max-width: 200px;
+    border-radius: 5px;
 }
 
 .info-wrapper .movie-right .movie-name h2{
@@ -121,7 +125,6 @@ html{
 .information .genre-info .genre span{
     margin-left: 15px;
     background-color: #FFB200;
-    width: 50px;
 }
 .information .plot-info{
     margin-top: 20px;
